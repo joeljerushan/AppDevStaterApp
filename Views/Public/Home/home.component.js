@@ -16,7 +16,14 @@ export const HomeScreen = ({ navigation }) => {
         <Button onPress={navigateDetails}>OPEN DETAILS</Button>
         
         <Layout style={styles.layout} level='4'>
-            <Text>4</Text>
+            <Layout style={styles.containerInner} level='4'>
+                <Layout style={styles.layout} level='1'>
+                    <Text>1/2</Text>
+                </Layout>
+                <Layout style={styles.layout} level='2'>
+                    <Text>1/2</Text>
+                </Layout>
+            </Layout>
         </Layout>
         <Layout style={styles.layout} level='3'>
             <Text>3</Text>
@@ -38,7 +45,11 @@ export const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      flexDirection: 'row',
+      flexDirection: 'column',
+    },
+    containerInner: {
+        flex: 1,
+        flexDirection: 'row',
     },
     layout: {
       flex: 1,
