@@ -28,3 +28,5 @@ Lastly, execute the plugin by adding the following to your /android/app/build.gr
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services' // <- Add this line
 ```
+
+Read more about setup here - https://rnfirebase.io/
