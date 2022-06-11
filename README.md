@@ -13,13 +13,15 @@ To allow Firebase on Android to use the credentials, the google-services plugin 
 
 First, add the google-services plugin as a dependency inside of your /android/build.gradle file:
 
-`buildscript {
+```
+buildscript {
   dependencies {
     // ... other dependencies
     classpath 'com.google.gms:google-services:4.3.10'
     // Add me --- /\
   }
-}`
+}
+```
 
 Lastly, execute the plugin by adding the following to your /android/app/build.gradle file:
 
