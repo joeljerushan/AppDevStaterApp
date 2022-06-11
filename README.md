@@ -24,6 +24,7 @@ buildscript {
 ```
 
 Lastly, execute the plugin by adding the following to your /android/app/build.gradle file:
-
+```
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services' // <- Add this line
+```
